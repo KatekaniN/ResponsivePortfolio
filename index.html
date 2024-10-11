@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <title>Full-Stack Web Developer | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div>
+                <a class="nav-logo" href="#">Katekani Nyamandi</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <label class="switch">
+                <input type="checkbox" id="theme-toggle">
+                <span class="slider round"></span>
+            </label>
+            <div class="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <a href="#contact" class="contact-btn">Contact me</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1 class="logo">Katekani Nyamandi</h1>
+            <p class="subtitle">Full-Stack Web Developer</p>
+            <p class="description">I am based in Johannesburg, South Africa. <br> I love building websites that users
+                love.</p>
+            <a href="media/CV Katekani Nyamandi.pdf" download="katekani-cv" class="cv-btn">Download my CV</a>
+        </div>
+        <div class="hero-image">
+            <img src="media/header.png" alt="Hero image">
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <h2>Skills</h2>
+        <div class="skills-list">
+            <div class="skill">
+                <img src="media/frontend.png" alt="frontend technology logos">
+                <h3>Frontend Development</h3>
+                <br>
+                <p>HTML, CSS, JavaScript, React, Tailwind CSS</p>
+            </div>
+            <div class="skill">
+                <img src="media/backend.png" alt="backend technology logos">
+                <h3>Backend Development</h3>
+                <br>
+                <p>Node.js, Express.js, PostgreSQL, RESTful APIs</p>
+            </div>
+            <div class="skill">
+                <img src="media/technologies.png" alt="technologies logos">
+                <h3>Tools & Technologies</h3>
+                <br>
+                <p>Git, GitHub, Docker, Webpack</p>
+            </div>
+            <div class="skill">
+                <h3>Other Skills</h3>
+                <p>Agile methodologies, Testing (Jasmine)</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <h2>Projects</h2>
+        <div class="project-list">
+            <div class="project">
+                <a href="https://github.com/Collin-1/Safe_Space" target="_blank" rel="noopener noreferrer">
+                    <img src="media/safespaces.png" alt="safe spaces logo image"></a>
+                <h3>Safe Spaces App</h3>
+                <p>An app that connects women and children to verified safe spaces in their community developed at the
+                    2024 Geekulcha hackathon. <br> <br>Built using <a
+                        href="https://developer.mozilla.org/en-US/docs/Web/HTML">HTML</a>, <a
+                        href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS</a>, <a
+                        href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">Javascript</a> and <a
+                        href="https://www.mapbox.com">the Mapbox api</a>.</p>
+            </div>
+            <div class="project">
+                <a href="https://github.com/Umuzi-org/Katekani-Nyamandi-282-node-sql-assignment-javascript"
+                    target="_blank" rel="noopener noreferrer">
+                    <img src="media/dbms.png" alt="node file system logo image"></a>
+                <h3>Visitor Management System</h3>
+                <p>An app that allows organizations to manage visitor data efficiently.<br> <br> Built using <a
+                        href="https://www.postgresql.org">PostgreSQL</a> and <a href="https://nodejs.org/en">Node.js</a>
+                    from
+                    the <a href="http://syllabus.africacode.net">Umuzi curriculum</a>.</p>
+            </div>
+            <div class="project">
+                <a href="https://github.com/Umuzi-org/Katekani-Nyamandi-186-consume-github-api-javascript"
+                    target="_blank" rel="noopener noreferrer">
+                    <img src="media/api.png" alt="An api being consumed"></a>
+                <h3> GitHub PR Fetcher</h3>
+                <p>A tool to fetch, validate, and manage GitHub pull request data. <br><br> Built using <a
+                        href="https://docs.github.com/en/rest?apiVersion=2022-11-28"> the GitHub REST API</a>
+                    from the<a href="http://syllabus.africacode.net">Umuzi curriculum</a>.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h2>Contact Me</h2>
+        <form action="https://formspree.io/f/mqakkzpy" method="POST">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Katekani Nyamandi. All rights reserved.</p>
+    </footer>
+
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const navLinks = document.querySelector(".nav-links");
+        const themeToggle = document.getElementById('theme-toggle');
+        const body = document.body;
+
+        hamburger.addEventListener("click", () => {
+            navLinks.classList.toggle("active");
+        });
+
+        themeToggle.addEventListener('change', () => {
+            body.classList.toggle('light-mode');
+        });
+
+        const formSubmission = document.getElementsByClassName("submit-btn");
+        event.preventDefault()
+        formSubmission.addEventListener("click", alert("Thanks for reaching out! I'll be in touch soon 😄"))
+    </script>
+</body>
+
+</html>
