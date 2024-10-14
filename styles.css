@@ -29,7 +29,7 @@ body.light-mode .nav-logo {
 }
 
 body.light-mode .navbar .nav-links li a {
-  color: #131313;
+  color: #FE01F9;
 }
 
 body.light-mode .cv-btn{
@@ -484,10 +484,6 @@ footer {
 
 }
 
-.switch{
-  display: none;
-}
-
 .contact-btn{
   display: none;
 }
@@ -495,4 +491,43 @@ footer {
 .hero-image img {
   display:none;
 }
+
+.switch {
+  width: 30px;
+  height: 18px;
+}
+
+.slider:before {
+  height: 16px;
+  width: 16px;
+}
+
+input:checked + .slider:before {
+  transform: translateX(12px);
+}
+
+.nav-logo{
+  font-size: x-large;
+}
+
 } 
+
+@media screen and (max-width: 480px) {
+  .switch {
+    width: 25px;
+    height: 16px;
+  }
+
+  .nav-logo{
+    font-size: x-large;
+  }
+
+  .slider:before {
+    height: 14px;
+    width: 14px;
+  }
+
+  input:checked + .slider:before {
+    transform: translateX(9px);
+  }
+}
